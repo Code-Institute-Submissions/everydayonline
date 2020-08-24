@@ -80,7 +80,7 @@ body {
     left: 0;
     position: fixed;
     background-color: white;
-    color: #555
+    color: #555;
     z-index: 1;
 }
 
@@ -97,7 +97,9 @@ a.category-badge > span.badge:hover {
     right: 10px;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
