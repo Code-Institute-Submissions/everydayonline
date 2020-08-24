@@ -81,7 +81,7 @@ body {
     position: fixed;
     background-color: white;
     color: #555;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 a.category-badge > span.badge:hover {
