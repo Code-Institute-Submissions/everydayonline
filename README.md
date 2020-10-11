@@ -1,4 +1,6 @@
 # everydayonline
 
-cp -r ../.pip-modules/lib/python3.8/site-packages/allauth/templates/* ./templates/allauth/
-^^ this code will copy all files from allauth in custom templates directory
+everydayonline is a e-commerce store built using Pythons Django framework, and hosted using Heroku.
+The main function of the app is to allow users to browse the range of products and buy which they 
+see fit. Users can also add, edit and delete their own products but wont be-able to affect products
+posted by other users.
