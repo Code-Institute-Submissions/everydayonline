@@ -61,3 +61,38 @@ posted by other users.
         - jQuery was used for many things but mainly worked with Bootstrap to enhance some of it features.
     - [Django:](https://www.djangoproject.com/)
         - Django is the Python framework used to power the app itself.
+
+- ### Tools Used
+    - [Figma:](https://www.figma.com/)
+        - Figma was used to create the wireframes during the design process.
+    - [Stripe:](https://stripe.com/gb)
+        - Stripe was used to accept payments when users checkout.
+    - [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
+        - Photoshop was used to create 'README-assets' images. 
+    - [Web Formatter:](https://webformatter.com/)
+        - Web Formatter was used to beautify code to keep everything neat and improve readability. 
+        - This can also be done by utilizing Beautify Cmd (Shift + Alt + F) in GitPod.
+    - [Grammarly:](https://app.grammarly.com/)
+        - Grammarly was used at the end to correct any spelling/grammar mistakes. 
+    - [Jasmine:](https://jasmine.github.io/)
+        - Jasmine was used to test the JavaScript before Implementing It into the website.
+    - [Git:](https://git-scm.com/)
+        - Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
+    - [Gitpod:](https://www.gitpod.io/)
+        - Gitpod was the IDE used throughout the entirety of the project. 
+    - [GitHub:](https://github.com/)
+        - GitHub is used to store the project's code after being pushed from Git.
+
+- ### Databases
+    - [SQLite3:](https://www.sqlite.org/index.html)
+        - SQLite3 is the default Django database, used during development.
+    - [PostgreSQL:](https://www.postgresql.org/)
+        - PostgreSQL is the production database, provided by, and deployed to Heroku.
+
+- ### Hosting
+    - [Heroku:](https://www.heroku.com/)
+        - Heroku was used to deploy the final version of the site.
+
+
+    
+
