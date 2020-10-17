@@ -22,3 +22,22 @@ posted by other users.
         1. As a Frequent User, I want to see newly added products.
         2. Also, I want to be made aware of new deals and special offers.
         3. Also, I want to edit and delete my own products.
+
+- ### Design
+    - #### Bootstrap 4
+        - Bootstrap is a CSS framework that was used to build this app. 
+
+    - #### Layout
+        - The everydayonline app uses the Bootstrap 4 framework which I used throughout the site to keep the
+        design / layour the same by utilising Bootstraps built-in classes. By using the row and column classes,
+        I was easily able to quickly put together a simplistic yet professional looking layout without having 
+        too add much(if any) custom CSS.
+
+    - #### Icon Set
+        - Font Awesome has been used throughout the project, across all sections, ranging from icons in the 
+        nav bar through to the checkout page and everything in between. These icons are built into the Bootstrap
+        framework and really help illustrate the page.
+
+    - #### Database
+        - Django uses SQL databases. During development, the Django default sqlite3 database was used. When deployed 
+        to Heroku, a PostgreSQL database was used.
