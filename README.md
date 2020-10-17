@@ -41,3 +41,6 @@ posted by other users.
     - #### Database
         - Django uses SQL databases. During development, the Django default sqlite3 database was used. When deployed 
         to Heroku, a PostgreSQL database was used.
+
+## Features
+**Note:** All Features Information can be located in the separate [FEATURES.md](https://github.com/joenapper/everydayonline/blob/master/FEATURES.md) due to the length of content.
