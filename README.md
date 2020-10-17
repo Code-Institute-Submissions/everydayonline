@@ -44,3 +44,20 @@ posted by other users.
 
 ## Features
 **Note:** All Features Information can be located in the separate [FEATURES.md](https://github.com/joenapper/everydayonline/blob/master/FEATURES.md) due to the length of content.
+
+## Technologies Used
+- ### Languages Used
+    - [HTML5](https://en.wikipedia.org/wiki/HTML5)
+    - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+    - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+    - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+- ### Libraries Used
+    - [Bootstrap:](https://getbootstrap.com/)
+        - Bootstrap provided the CSS framework which made it easy to keep the site looking consistent throughout.
+    - [Font Awesome:](https://fontawesome.com/)
+        - Font Awesome was used to help illustrate various sections of the site by adding icons.
+    - [jQuery:](https://jquery.com/)
+        - jQuery was used for many things but mainly worked with Bootstrap to enhance some of it features.
+    - [Django:](https://www.djangoproject.com/)
+        - Django is the Python framework used to power the app itself.
