@@ -158,4 +158,25 @@ posted by other users.
         to edit these products and even remove them if necessary. This can be done by searching for your added product and selecting the edit or
         delete buttons. Note this can only be done for products that the user added - not any product.
 
+- ### CRUD Testing
+    - Create
+        - I tested the create functionality of the website by using the 'Product Management'(My Account > Product Management) form. This form allows
+        users to add there own product. Using this form, I copied the information from a product already inside the database and clicked the 'Add Product'
+        button. I then went to the site admin page and checked the information i just added was displaying the same way as the copied product.
+    - Read
+        - The read functionality was testing using for loops to display all the products in the database and then from there, all the information linked
+        to that specific product. This was made more aesthetically pleasing using CSS and displayed in a more professional manner. On the main page, I only 
+        displayed the product image, name, price, rating and category so I could display more products on the page and keep everything looking good. If the user 
+        was interested in the product and wanted more information, they can click the anywhere on the products 'card', and all the information will be displayed. 
+    - Update
+        - The update functionality was tested by adding an 'Edit' button to each product. I would deliberately add a new product with a spelling mistake and then 
+        use the edit button to correct the mistake. I would then go back to the product page and make sure the changes were successful and double check inside the
+        database.
+    - Delete
+        - The delete functionality was tested by adding clones of a product to the database and then using the 'Delete' button on that specific product to make sure 
+        they were being removed. I used duplicate products to make sure I wasn't deleting any valuable information from the database. There is also a validation 
+        step to the delete process where the user has to click that they are sure they want to delete. I did this just to make sure the user didn't click the button 
+        by accident and end up deleting something that they didn't want to.
+
+
         
