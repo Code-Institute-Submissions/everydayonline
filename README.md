@@ -178,5 +178,9 @@ posted by other users.
         step to the delete process where the user has to click that they are sure they want to delete. I did this just to make sure the user didn't click the button 
         by accident and end up deleting something that they didn't want to.
 
-
-        
+- ### Further Testing
+    - The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge, Firefox and Safari browsers. 
+    - The website was viewed on a variety of devices such as Desktop, Laptop, Samsung Galaxy S7, Samsung Galaxy S10, iPhone 5, iPhone 6s & iPhone X.
+    - A large amount of testing was done to ensure that everything rendered and linked correctly on all browsers and a wide variety of devices.
+    - All JavaScript and jQuery code was tested in a separate workspace using Jasmine and the Jasmine-JQuery plugin before importing it into the project. 
+    - Friends and Family members were asked to review the site and report feedback on any bugs and/or user experience issues/negative experiences.
