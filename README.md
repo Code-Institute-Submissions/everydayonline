@@ -93,6 +93,69 @@ posted by other users.
     - [Heroku:](https://www.heroku.com/)
         - Heroku was used to deploy the final version of the site.
 
+## Testing
+- ### Code Validation
+    - #### HTML
+        - [W3C HTML Validator](https://validator.w3.org/)
+            - All HTML was passed through the HTML validator. Outside of errors thrown due to using the Django templating 
+            language, which are unavoidable given the nature of the project, everything came back fine.
 
-    
+    - #### CSS
+        - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+            - The W3C CSS Validator was used to validate the CSS page to ensure there were no syntax errors in the document.
 
+    - #### JavaScript
+        - [JSHint](https://jshint.com/)
+            - The JavaScript files were run through JSHINT and apart from a few missed semicolons (which were rectified), 
+            no errors displayed.
+
+    - #### Python
+        - [Python](http://pep8online.com/)
+            - The Python script was checked using pep8online and is fully PEP8 compliant with zero errors or warnings.
+
+- ### Testing User Stories from User Experience (UX) Section
+- #### First Time Visitor Goals
+    As a First Time Visitor...
+    - I want to understand the purpose of the site.
+        - On entry of the site the user can clear see the background image of a women shopping with the caption "THE NEW COLLECTIONS 
+        ARE HERE!" and a "SHOP NOW" button... clearly showing its a online store.
+    - I want to easily find products to buy.
+        - On the home page theirs a search bar which can be used to search anything the user wants to fine. Not only that but the 
+        nav-bar contains links to all the different categories available on the site.
+    - I want to easily navigate through the site.
+        - The site uses a sticky header which always keeps the navbar at the top of the users screen. This means the user can never get
+        trapped on the page. Also, there is an arrow at the bottom of the screen which acts as a 'back to top' button so the user can
+        return to the page of the page whenever they want without having to scroll.
+
+- #### Returning Visitor Goals
+    As a Returning Visitor...
+    - I want to see my previous orders.
+        - Everytime an order is made, the user will be asked to provide an email address. After the items have ben purchased, a comfirmation 
+        email is sent to that address where the user can alwyas go back to and see what they bought. Not only that but, as a member of the 
+        site, the users previous orders are saved my default in the 'My Profile' section as an easy way to see previous orders.
+    - I want a way to save details to checkout faster.
+        - The user can save there details to make check out faster by creating there own account on the site and adding there details to the
+        'My Profile' section. This will save there details and use the information to populate the checkout page for the next purchase.
+    - I want to create my own account.
+        - We make it easy for users to create an account on our website. On the navbar, theirs a 'My Account' button (and icon) that the user can 
+        click which then gives options to sign in or create an account. From here the user can easily create an account, verify it and enjoy as
+        a member.
+    - I want to add my own products.
+        - As a member of the site, users have access to the 'Product Management' button which will redirect them to a page where they can add
+        there own product, along with a description, price and image amongst other things.
+
+- #### Frequent User Goals
+    As a Frequent User...
+    - I want to see newly added products.
+        - All product pages on the site are set to display newest added first. Even if the user uses filters, for example 'By Price', and two
+        different products have a price of '$9.99', the newest added product will display first. Therfor, the user will always see the most
+        recent products first.
+    - I want to be made aware of new deals and special offers.
+        - We help promote any deals and/or special offers by making it clear on the site of what sales are currently on. At the moment, we have
+        a tab of the navbar that links to 'Special Offers' so the user can see whats on offer. 
+    - I want to edit and delete my own products.
+        - As a member we allow users to add and sell there own products on the site using the 'Product Management' section. We also allow Users
+        to edit these products and even remove them if necessary. This can be done by searching for your added product and selecting the edit or
+        delete buttons. Note this can only be done for products that the user added - not any product.
+
+        
