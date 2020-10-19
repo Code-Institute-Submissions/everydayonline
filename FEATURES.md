@@ -72,3 +72,5 @@ left/right properties in CSS to get the best possible postion without affecting 
     the user to the page where they can see their changes have been made successfully.
     
     - Delete: 
+
+<h3 align="center"><a href="https://github.com/joenapper/everydayonline/blob/master/README.md">Return to README.md</a></h3>
