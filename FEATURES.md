@@ -4,6 +4,9 @@
 
 ##### Note: FEATURES.MD is in a separate file to the [README.md](https://github.com/joenapper/everydayonline/blob/master/README.md) to keep the file a reasonable length and to maintain cleanliness.
 
+## Table Of Contents
+[Features](#features) || [Site-Wide ](#site-wide ) | [Landing Page](#home-page-(landing-page)) | [All Products](#all-products) | [Product Management](#product-management)
+
 ## Features
 
 ### Site-Wide 
@@ -72,5 +75,10 @@ left/right properties in CSS to get the best possible postion without affecting 
     the user to the page where they can see their changes have been made successfully.
     
     - Delete: 
+
+### Product Management
+- ##### Add product form
+    
+
 
 <h3 align="center"><a href="https://github.com/joenapper/everydayonline/blob/master/README.md">Return to README.md</a></h3>
