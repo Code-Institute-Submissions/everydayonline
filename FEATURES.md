@@ -78,6 +78,16 @@ left/right properties in CSS to get the best possible postion without affecting 
 
 ### Product Management
 - ##### Add product form
+    - On the 'Add a Product' page, I have made it very clear to guide users, step by step, through adding there own cocktail recipe. Each input field 
+    has its own 'title' which informs the user what information goes where. Not only that, but each text-box has placeholder text, further helping the user. 
+
+    - The form is very easy to read and keeps the same principles on all screen sizes. Each text box takes up 100% of the allowed space (within the body margin) 
+    and makes for good readability.
+
+    - The actual 'Add Cocktail' button is clearly located at the end of the form and uses the strong blue color to stand out amongst the other content. I also 
+    positioned the button at the right-hand side, staggering it from the title, as it is said to improve readability and make the design look better. After all 
+    the information is filled out, the user needs to click this button, which will then redirect them to the full list of cocktails where they can see there newly 
+    added recipe at the top, showing the user there recipe has been added successfully.
     
 
 

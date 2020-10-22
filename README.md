@@ -65,6 +65,8 @@ posted by other users.
 - ### Tools Used
     - [Figma:](https://www.figma.com/)
         - Figma was used to create the wireframes during the design process.
+    - [Kaggle:](https://www.kaggle.com/)
+        - Kaggle was used to prune the dataset and easily aquire assets.
     - [Stripe:](https://stripe.com/gb)
         - Stripe was used to accept payments when users checkout.
     - [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
