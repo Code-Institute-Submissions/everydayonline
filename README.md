@@ -205,3 +205,15 @@ posted by other users.
     - The site was deployed to [Heroku](https://www.heroku.com/) using the following steps...
 
 
+## Credits
+- ### Content
+    - All HTML, CSS, JavaScript and Python code is of my own with the use of [Bootstraps](https://getbootstrap.com/) built in classes and functions.
+    - The products details and assets were sourced from [Kaggle](https://www.kaggle.com/).
+    - All other words and text are my own.
+
+- ### Media
+    - The product images have been sourced from their respective products at [Kaggle](https://www.kaggle.com/).
+    - All other media was sourced from [Google Images](https://www.google.co.uk/imghp?hl=en&tab=wi&ogbl).
+
+- ### Acknowledgements
+    - My Mentor Mark Railton for continuous helpful feedback and ideas to improve both myself as a developer and my project.
