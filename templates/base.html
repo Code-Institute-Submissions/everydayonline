@@ -11,39 +11,53 @@
     {% endblock %}
 
     {% block extra_meta %}
+        <!-- Loads Additional Meta Tags -->
     {% endblock %}
 
     {% block corecss %}
+        <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Google Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+        <!-- Custom CSS -->
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
     {% block extra_css %}
+        <!-- Loads Addition CSS -->
     {% endblock %}
 
     {% block corejs %}
+        <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+        <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!-- Popper JS -->
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <!-- Bootstrap -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <!-- Stripe -->
         <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
 
     {% block extra_js %}
+        <!-- Loads Addition JavaScript -->
     {% endblock %}
 
     <title>everydayonline {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
+    <!-- Header / Nav -->
     <header class="container-fluid fixed-top">
+        <!-- Top Nav -->
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="logo-font text-black my-0"><strong>everyday</strong>online</h2>
                 </a>
             </div>
+
+            <!-- Search Bar -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
@@ -58,6 +72,9 @@
                     </div>
                 </form>
             </div>
+            <!-- End -->
+
+            <!-- User Login / Sign-up & Grand Total -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
@@ -96,7 +113,11 @@
                     </li>
                 </ul>
             </div>
+            <!-- End -->
         </div>
+        <!-- End Top Nav -->
+
+        <!-- Bottom Nav / (templates > includes) -->
         <div class="row bg-white">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -111,8 +132,11 @@
                 <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
             </div>            
         </div>
+        <!-- End Bottom Nav -->
     </header>
+    <!-- End -->
 
+    <!-- Toast Pop-ups -->
     {% if messages %}
         <div class="message-container">
             {% for message in messages %}
@@ -130,19 +154,22 @@
             {% endfor %}
         </div>
     {% endif %}
+    <!-- End -->
 
     {% block page_header %}
+        <!-- Loads Page Header -->
     {% endblock %}
 
     {% block content %}
+        <!-- Loads Page Content -->
     {% endblock %}
 
     {% block postloadjs %}
-    <script type="text/javascript">
-        $('.toast').toast('show');
-    </script>
+        <!-- Loads Postload JavaScript -->
+        <script type="text/javascript">
+            // Triggers Toasts
+            $('.toast').toast('show'); 
+        </script>
     {% endblock %}
-
-    
   </body>
 </html>
