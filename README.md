@@ -5,6 +5,19 @@ The main function of the app is to allow users to browse the range of products a
 see fit. Users can also add, edit and delete their own products but wont be-able to affect products
 posted by other users.
 
+## Table Of Contents
+[UX](#user-experience-(ux)) || [User Stories](#user-stories) | [Design](#design)
+
+[Features](https://github.com/joenapper/everydayonline/blob/master/FEATURES.md) || Features table of contents can be found in separate [FEATURES.md](https://github.com/joenapper/everydayonline/blob/master/FEATURES.md) file.
+
+[Technologies Used](#technologies-used) || [Languages](#languages-used) | [Libraries](#libraries-used) | [Tools](#tools-used) | [Databases](#databases) | [Hosting](#hosting)
+
+[Testing](#testing) || [Code Validation](#code-validation) | [Testing User Stories](#testing-user-stories-from-user-experience-(ux)-section) | [CRUD Testing](#crud-testing) | [Further Testing](#further-testing)
+
+[Deployment](#deployment) 
+
+[Credits](#credits) || [Content](#content) | [Media](#media) | [Acknowledgements](#acknowledgements)
+
 ## User Experience (UX)
 - ### User Stories
     - #### First Time Visitor Goals
@@ -186,3 +199,9 @@ posted by other users.
     - A large amount of testing was done to ensure that everything rendered and linked correctly on all browsers and a wide variety of devices.
     - All JavaScript and jQuery code was tested in a separate workspace using Jasmine and the Jasmine-JQuery plugin before importing it into the project. 
     - Friends and Family members were asked to review the site and report feedback on any bugs and/or user experience issues/negative experiences.
+
+## Deployment
+- ### Heroku
+    - The site was deployed to [Heroku](https://www.heroku.com/) using the following steps...
+
+
