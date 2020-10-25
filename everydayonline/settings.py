@@ -25,10 +25,9 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'jj8v(nqrt5j_z5a3jf^o(h7jwmxsc33s4q1o$zr1idnvknwrf&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['everydayonline.herokuapp.com', 'localhost']
 
 # Application definition
 
