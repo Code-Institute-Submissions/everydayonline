@@ -296,3 +296,14 @@ input[name='q']::placeholder {
         height: calc(100vh - 116px);
     }
 }
+
+/* bag page mobile tweaks */
+@media only screen and (max-width: 600px) {
+  .mob-flex-direction-col {
+      flex-direction: column
+  }
+
+  .btn-mob {
+      margin: .05em
+  }
+}
