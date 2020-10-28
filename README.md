@@ -89,6 +89,9 @@ posted by other users.
         - This can also be done by utilizing Beautify Cmd (Shift + Alt + F) in GitPod.
     - [Grammarly:](https://app.grammarly.com/)
         - Grammarly was used at the end to correct any spelling/grammar mistakes. 
+    - [Temp-mail:](https://temp-mail.org/)
+        - Temp-mail was used to test the automated emails, account sign-up/verification and reset password
+        emails amongst others.
     - [Jasmine:](https://jasmine.github.io/)
         - Jasmine was used to test the JavaScript before Implementing It into the website.
     - [Git:](https://git-scm.com/)
