@@ -14,7 +14,7 @@ posted by other users.
 
 [Testing](#testing) || [Code Validation](#code-validation) | [Testing User Stories](#testing-user-stories-from-user-experience-(ux)-section) | [CRUD Testing](#crud-testing) | [Further Testing](#further-testing)
 
-[Deployment](#deployment) 
+[Deployment](#deployment) || [Local Deployment](#local-deployment) | [Deploying To Heroku](#heroku) 
 
 [Credits](#credits) || [Content](#content) | [Media](#media) | [Acknowledgements](#acknowledgements)
 
@@ -204,10 +204,6 @@ posted by other users.
     - Friends and Family members were asked to review the site and report feedback on any bugs and/or user experience issues/negative experiences.
 
 ## Deployment
-- ### Heroku
-    - The site was deployed to [Heroku](https://www.heroku.com/) using the following steps...
-
-
 - ### Local Deployment
 The following instructions are based on the user running GitPod on Windows 10. If your IDE / OS is different, your commands may differ slightly, 
 but the process remains the same.
