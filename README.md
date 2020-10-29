@@ -208,6 +208,93 @@ posted by other users.
     - The site was deployed to [Heroku](https://www.heroku.com/) using the following steps...
 
 
+- ### Local Deployment
+The following instructions are based on the user running GitPod on Windows 10. If your IDE / OS is different, your commands may differ slightly, 
+but the process remains the same.
+
+You will need the [Code-Institute-Org/gitpod-full-template](https://github.com/Code-Institute-Org/gitpod-full-template) and the 
+[GitPod browser extension](https://www.gitpod.io/docs/browser-extension/) installed on your machine. You will also need the newest version of Python and
+pip3 which should come pre-built into the gitpod full template. Having your own GitHub account is also highly recommended.
+
+The following steps will allow you to deploy locally:
+
+- Head over to the project repo at [https://github.com/joenapper/everydayonline](https://github.com/joenapper/everydayonline) and click the 'GitPod' button in 
+the top right corner. This should automatically download all the files and open them in your own workspace.
+- Install any required modules with pip3 install -r requirements.txt
+- Head over to the 'settings.py' file in the project root and set up the required local environment variables, like below(make sure 'os' is imported).
+
+    - (import os)
+    - os.environ.setdefault("SECRET_KEY", "<Enter Your Django Secret Key here")
+    - os.environ.setdefault("HOST_NAME", "127.0.0.1")
+    - os.environ.setdefault("DEBUG", "1")
+
+    - email
+    - os.environ.setdefault("EMAIL_ADDRESS", "<Email Address App Will Use To Send Emails")
+    - os.environ.setdefault("EMAIL_HOST_PASS", "<Password For Above Email Address>")
+    - os.environ.setdefault("EMAIL_HOST_USER",  "<Your outgoing mail server")
+    - os.environ.setdefault("EMAIL_PORT",  "<Your smtp port>")
+
+    - stripe keys
+    - os.environ.setdefault("STRIPE_PUBLIC_KEY", "<Enter Your STRIPE_PUBLIC_KEY value here>")
+    - os.environ.setdefault("STRIPE_SECRET_KEY", "<Enter Your STRIPE_SECRET_KEY value here>")
+    - os.environ.setdefault("STRIPE_WH_KEY", "<Enter Your STRIPE_WH_KEY value here>")
+
+- **Note:** When deploying locally, there is no need to set up AWS S3 buckets as all media files are served locally.
+
+- Run python3 manage.py runserver in the terminal. This will create a local sqlite3.db file for us to use.
+- Once this has run, close the server using 'CTRL + C' inside the terminal.
+- Then run python3 manage.py migrate to set up the database. There is no need to make migrations as the migration files are already present.
+- Create a superuser using python3 manage.py createsuperuser - you will need to enter a username, email address and password (twice).
+- Start the server up again with python3 manage.py runserver
+- Open the app in a browser window by 'CTRL + click' on the link in the terminal or by navigating to 'http://127.0.0.1:8000/accounts/login/' or 
+'https://8000-aabfcfe3-5bf8-4bf3-8622-7695e7dadaab.ws-eu01.gitpod.io/accounts/login' and login with your newly created superuser.
+- Once logged in, navigate to the admin panel at http://127.0.0.1:8000/admin' / 'https://8000-aabfcfe3-5bf8-4bf3-8622-7695e7dadaab.ws-eu01.gitpod.io/admin' 
+and click on 'Email addresses'.
+- Click on your email from the list, tick the 'Verified' and 'Primary' boxes and click 'Save'.
+
+- ### Deploying To Heroku
+These instructions make the following assumptions:
+
+- The app has been deployed locally, following the above steps, and then pushed to your own GitHub account.
+- Private files should be added to your '.gitignore'(i.e. *.sqlite3, *.pyc...).
+- You have created and configured an AWS S3 Bucket for serving the media files.
+- You have a Stripe account.
+- There should be no reason to create a Procfile or requirements.txt file(these should already be present in the cloned repository).
+
+Once all the above is in place, the instructions below will enable you to deploy to Heroku.
+
+- Go to [heroku.com](https://www.heroku.com/) and log in or create an account.
+- Add a new app, give it a name, choose a region closest to you and click Create app.
+- On the dashboard, click the resources tab. From within the addons input field search for 'Heroku Postgres' and select it.
+- In the plan box that pops up, select 'Hobby Dev - Free', then click 'Provision'.
+- Once set up, click the 'Postgres' database, select the 'settings' tab and 'Database Credentials' heading. Make a note of the URI value, you will 
+need it later(It will start with 'postgres://'...).
+- Go back to the Dashboard, and from the 'Setttings' tab, click the 'Reveal Config Vars' button and add the following key / value pairs: 
+    - AWS_ACCESS_KEY_ID - Your AWS Access Key ID.
+    - AWS_SECRET_ACCESS_KEY - Your AWS Secret Access Key.
+    - DATABASE_URL - This should already be here after you created the Postgres db, but if not, it is the Postgres URI you made a note of earlier.
+    - EMAIL_HOST_USER - The email address you want the app to send emails from.
+    - EMAIL_HOST_PASS - The password for above email address.
+    - SECRET_KEY - Django secret key(use a Django secret key generator).
+    - STRIPE_PUBLIC_KEY - Your Stripe public key.
+    - STRIPE_SECRET_KEY - Your Stripe Secret key.
+    - STRIPE_WH_KEY - Your Stripe webhook key.
+    - USE_AWS - Set to 'True'.
+
+- Prepare the new Postgres db, by following these steps:
+    - From your local IDE, go to your'settings.py' file and under 'DATABASE_URL' add your postgress value(this can be copied from the Heroku config vars) and 
+    restart your IDE to allow the new environment variable for the database to take effect.
+- Your local deployment should now be connected to the remote Postgres db so you can run:
+    - python3 manage.py migrate to set up the database
+    - python3 manage.py createsuperuser to set up your admin account.
+    - Delete / comment out the 'DATABASE_URL' entry in your 'settings.py file.
+
+- Back in the Heroku Dashboard, click the Deploy tab and scroll down to Deployment Method. Select GitHub and link your account and repository.
+- Scroll down further to Manual Deploy, choose the branch you wish to deploy and click Deploy Branch
+- Wait for the app to build, and once complete, click view to launch your app in the browser.
+- Log in with the superuser details you created and navigate to the admin panel at 'your-deployment-url/admin'.
+- Repeat the instructions from 'Local Deployment' to 'Verify' and make 'Primary' email to give access to your superuser(remember to press save).
+
 ## Credits
 - ### Content
     - All HTML, CSS, JavaScript and Python code is of my own with the use of [Bootstraps](https://getbootstrap.com/) built in classes and functions.
