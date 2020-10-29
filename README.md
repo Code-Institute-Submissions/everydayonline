@@ -5,6 +5,8 @@ The main function of the app is to allow users to browse the range of products a
 see fit. Users can also add, edit and delete their own products but wont be-able to affect products
 posted by other users.
 
+<h2 align="center"><a href="https://everydayonline.herokuapp.com/">Click here for the live site</a></h2>
+
 ## Table Of Contents
 [UX](#user-experience-(ux)) || [User Stories](#user-stories) | [Design](#design)
 
